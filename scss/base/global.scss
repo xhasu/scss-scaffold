@@ -13,6 +13,7 @@ body{
     line-height: 24px;
     background-color: whitesmoke;
     min-height: 100vh;
+    min-width: 320px;
     // @include basehold();
     @include font-default();
 }
