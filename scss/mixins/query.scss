@@ -51,3 +51,15 @@
     @content;
   }
 }
+
+@mixin theme-dark-scheme {
+  @media only screen and (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+@mixin theme-light-scheme {
+  @media only screen and (prefers-color-scheme: light) {
+    @content;
+  }
+}
