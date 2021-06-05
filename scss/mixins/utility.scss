@@ -52,3 +52,20 @@
 @mixin mark ($color: red) {
   outline: 1px solid $color;
 }
+
+@mixin layout ($background: white, $lines: black, $main: 100px, $sub: 20px) {
+  background-color: $background;
+  background-image:
+    linear-gradient(rgba($lines,.07) 2px, transparent 2px),
+    linear-gradient(90deg, rgba($lines,.07) 2px, transparent 2px),
+    linear-gradient(rgba($lines,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba($lines,.06) 1px, transparent 1px);
+  background-size: $main $main, $main $main, $sub $sub, $sub $sub;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+@mixin depth {
+  * {
+    background-color: hsla(0deg, 0%, 0%, .15);
+  }
+}

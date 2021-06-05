@@ -1,14 +1,13 @@
 {
   "name": "scss-scaffold",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
     "dev": "gulp",
     "development": "npm run dev",
-    "prod": "gulp deploy",
-    "production": "npm run deploy"
+    "export": "gulp deploy"
   },
   "author": "",
   "license": "MIT",
