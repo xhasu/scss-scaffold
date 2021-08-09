@@ -57,7 +57,7 @@ const compress = [
 	'sitemap.xml'
 ]
 
-function deploy(done) {
+function build(done) {
 
 	gulp.src(compress, {base: './'})
 		.pipe(zip('web.zip'))
@@ -66,4 +66,4 @@ function deploy(done) {
 	done();
 };
 
-gulp.task('deploy', deploy);
+gulp.task('build', build);
